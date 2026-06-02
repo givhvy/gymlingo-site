@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GymLingo</title>
+  <meta name="description" content="GymLingo turns beginner workouts into tiny lessons with streaks, XP, hearts, daily challenges, and personalized coach plans.">
+  <style>
+    :root {
+      color-scheme: light;
+      --green: #58CC02;
+      --green-dark: #58A700;
+      --blue: #1CB0F6;
+      --orange: #FF9600;
+      --text: #111827;
+      --muted: #4B5563;
+      --bg: #F7F7F7;
+      --surface: #FFFFFF;
+      --border: #E5E7EB;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 56px 20px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 64px;
+    }
+
+    nav a, footer a {
+      color: var(--blue);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .brand {
+      color: var(--green-dark);
+      font-size: 24px;
+      font-weight: 900;
+      letter-spacing: 0;
+    }
+
+    .links {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    h1 {
+      max-width: 760px;
+      margin: 0;
+      font-size: clamp(42px, 7vw, 76px);
+      line-height: 0.98;
+      letter-spacing: 0;
+    }
+
+    .lead {
+      max-width: 680px;
+      margin: 22px 0 0;
+      color: var(--muted);
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .cta-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 28px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0 20px;
+      border-radius: 14px;
+      background: var(--green);
+      box-shadow: 0 4px 0 var(--green-dark);
+      color: white;
+      font-weight: 900;
+      text-decoration: none;
+    }
+
+    .button.secondary {
+      background: var(--surface);
+      box-shadow: inset 0 0 0 2px var(--border);
+      color: var(--text);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+      margin-top: 52px;
+    }
+
+    .card {
+      min-height: 150px;
+      padding: 20px;
+      border: 2px solid var(--border);
+      border-radius: 18px;
+      background: var(--surface);
+    }
+
+    .card strong {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 18px;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    footer {
+      margin-top: 56px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <nav>
+      <div class="brand">GymLingo</div>
+      <div class="links">
+        <a href="/privacy">Privacy</a>
+        <a href="/terms">Terms</a>
+        <a href="/support">Support</a>
+      </div>
+    </nav>
+
+    <h1>Learn the gym like a language.</h1>
+    <p class="lead">Tiny guided workouts, streaks, XP, hearts, daily challenges, coach plans, and founding squad codes for beginners who want to start today.</p>
+
+    <div class="cta-row">
+      <a class="button" href="mailto:support@gymlingo.app">Contact Support</a>
+      <a class="button secondary" href="/privacy">Privacy Policy</a>
+    </div>
+
+    <section class="grid" aria-label="GymLingo features">
+      <div class="card">
+        <strong>Tiny Lessons</strong>
+        <p>Short push, pull, legs, core, and cardio sessions with clear rep and timer guidance.</p>
+      </div>
+      <div class="card">
+        <strong>Daily Challenges</strong>
+        <p>Shareable challenge prompts and workout receipts make progress easier to post.</p>
+      </div>
+      <div class="card">
+        <strong>Super GymLingo</strong>
+        <p>Unlimited hearts, full path access, streak protection, analytics, leagues, and plans.</p>
+      </div>
+    </section>
+
+    <footer>
+      <p>GymLingo provides general fitness education, not medical advice. Train safely and stop if you feel pain, dizziness, or unusual discomfort.</p>
+    </footer>
+  </main>
+</body>
+</html>

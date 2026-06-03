@@ -1,4 +1,4 @@
-# GymLingo Legal Site
+# GymQuest Legal Site
 
 This folder is a static website for App Store Connect URLs:
 
